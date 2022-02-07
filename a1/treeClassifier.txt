@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="donald <= 0.5\nentropy = 0.968\nsamples = 2286\nvalue = [1381, 905]\nclass = real"] ;
+1 [label="trumps <= 0.5\nentropy = 0.999\nsamples = 1552\nvalue = [802, 750]\nclass = real"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="hillary <= 0.5\nentropy = 0.999\nsamples = 1452\nvalue = [703, 749]\nclass = fake"] ;
+1 -> 2 ;
+3 [label="(...)"] ;
+2 -> 3 ;
+310 [label="(...)"] ;
+2 -> 310 ;
+315 [label="star <= 0.5\nentropy = 0.081\nsamples = 100\nvalue = [99, 1]\nclass = real"] ;
+1 -> 315 ;
+316 [label="(...)"] ;
+315 -> 316 ;
+317 [label="(...)"] ;
+315 -> 317 ;
+318 [label="the <= 0.5\nentropy = 0.744\nsamples = 734\nvalue = [579, 155]\nclass = real"] ;
+0 -> 318 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+319 [label="hillary <= 0.5\nentropy = 0.656\nsamples = 650\nvalue = [540, 110]\nclass = real"] ;
+318 -> 319 ;
+320 [label="(...)"] ;
+319 -> 320 ;
+477 [label="(...)"] ;
+319 -> 477 ;
+496 [label="trump <= 0.5\nentropy = 0.996\nsamples = 84\nvalue = [39, 45]\nclass = fake"] ;
+318 -> 496 ;
+497 [label="(...)"] ;
+496 -> 497 ;
+498 [label="(...)"] ;
+496 -> 498 ;
+}
